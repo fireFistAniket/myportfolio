@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navBar">
+        <li><a href="#home" class="navBar-elem">Home</a></li>
+        <li><a href="#about" class="navBar-elem">about</a></li>
+        <li><a href="#works" class="navBar-elem">works</a></li>
+        <li><a href="#contact" class="navBar-elem">contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-header-div" id="home">
+      <div class="main-header-text-div">
+        <h2 class="main-header-text merriweather">
+          trusted partner for <s class="special-words">develop</s> your
+          <s class="special-words">website</s>
+        </h2>
+        <div>
+          <p class="main-header-para">
+            building stunning and amazing websites for over a year, and your
+            trusted partner for desigining static as well as dynamic websites as
+            per requirement & client satisfaction
+          </p>
+        </div>
+        <div class="social-icons-div">
+          <ul class="social-icons-ul">
+            <li>
+              <a
+                href="https://www.facebook.com/aniket.saha.904"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-facebook fa-rotate-270 fa-2xl social-icons"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/fireFistAniket" target="_blank">
+                <i
+                  class="fa-brands fa-github fa-rotate-270 fa-2xl social-icons"
+                ></i
+              ></a>
+            </li>
+          </ul>
+          <div class="social-icons-blank-div"></div>
+        </div>
+      </div>
+      <div class="main-header-img">
+        <img src="assests/main-pro-pic.jpg" alt="pro-pic" />
+        <h2>Mr. Aniket Saha</h2>
+      </div>
+    </div>
+    <div class="about-section-div" id="about">
+      <div class="about-section-card-div">
+        <img src="assests/about3.png" alt="" />
+        <h3 class="brunoacesc">Frontend designer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ducimus
+          nisi animi consequuntur quasi esse similique architecto fugiat quis.
+          Itaque, assumenda harum! Optio ex pariatur aspernatur neque atque
+          asperiores voluptate!
+        </p>
+      </div>
+      <div class="about-section-card-div">
+        <img src="assests/about1.jpg" alt="" />
+        <h3 class="brunoacesc">Frontend developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ducimus
+          nisi animi consequuntur quasi esse similique architecto fugiat quis.
+          Itaque, assumenda harum! Optio ex pariatur aspernatur neque atque
+          asperiores voluptate!
+        </p>
+      </div>
+      <div class="about-section-card-div">
+        <img src="assests/about2.jpg" alt="" />
+        <h3 class="brunoacesc">Backend Devoloper</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ducimus
+          nisi animi consequuntur quasi esse similique architecto fugiat quis.
+          Itaque, assumenda harum! Optio ex pariatur aspernatur neque atque
+          asperiores voluptate!
+        </p>
+      </div>
+    </div>
+    <div id="works" class="work-section-div">
+      <div class="work-section-slides-div fade">
+        <img src="assests/web-design-banner.jpeg" />
+        <p class="text">
+          Currently working in WebApps SoftWare Solution as a web designer
+        </p>
+      </div>
+
+      <div class="work-section-slides-div fade">
+        <img src="assests/project-image.png" />
+        <p class="text">
+          Created an blog page for QUANTITIVE APTITUDE question-answers and
+          formulas
+        </p>
+      </div>
+
+      <div class="work-section-slides-div fade">
+        <img src="assests/backend-design-banner.jpg" />
+        <p class="text">Design and Write API for websites</p>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="work-section-slides-prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="work-section-slides-next" onclick="plusSlides(1)">&#10095;</a>
+
+      <br />
+
+      <!-- The dots/circles -->
+      <div class="dot-indicator">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div id="skills" class="skill-section-div">
+      <h2>Skills</h2>
+      <div class="skill-section-card-main-div">
+        <div class="skill-section-card-div">
+          <img src="assests/Martz90-Hex-Html-5.ico" alt="" />
+          <p>85%</p>
+        </div>
+        <div class="skill-section-card-div">
+          <img src="assests/Martz90-Hex-Css-3.512.png" alt="" />
+          <p>85%</p>
+        </div>
+        <div class="skill-section-card-div">
+          <img
+            src="assests/javascript-icon-png-23.jpg"
+            alt=""
+          />
+          <p>85%</p>
+        </div>
+        <div class="skill-section-card-div">
+          <img
+            src="assests/react.png"
+            alt=""
+          />
+          <p>85%</p>
+        </div>
+        <div class="skill-section-card-div">
+          <img
+            src="assests/next-js-icon-512x512-zuauazrk.png"
+            alt=""
+          />
+          <p>85%</p>
+        </div>
+      </div>
+    </div>
+    <footer id="contact" class="footer-section">
+      <div class="footer-section-text-div">
+        <h2>Aniket Saha</h2>
+        <p>full stack Web devoloper</p>
+        <p>Contact with me for any kind of web devoloping consulting</p>
+      </div>
+      <div class="footer-section-icons-div">
+        <a href="https://wa.me/919007000328" target="_blank">
+          <img src="assests/whatsapp-logo-png-2268.png" alt="" />
+        </a>
+        <a href="mailto:sahaaniket720@gmail.com">
+          <img src="assests/Gmail_Logo_256px.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
