@@ -173,7 +173,7 @@ html {
   border: 0.1vw solid rgb(213, 4, 106);
   margin-top: 0.8vw;
   width: 0;
-  height: 10vh;
+  height: 3vw;
 }
 
 .main-header-img h2 {
@@ -192,7 +192,6 @@ html {
 
 .main-header-img img {
   width: 30vw;
-  height: 30vw;
   border-radius: 10%;
   filter: drop-shadow(0 25px 25px rgb(0, 0, 0));
   transition: transform 0.5s;
@@ -273,7 +272,6 @@ html {
 
 .work-section-slides-div img {
   width: 90vw;
-  height: 45%;
   box-shadow: 0 25px 50px -3px rgba(6, 224, 217, 0.513);
 }
 
@@ -316,6 +314,11 @@ html {
   padding: 8px 12px;
   width: 100%;
   text-align: center;
+}
+
+.work-section-slides-div p > a {
+  color: white;
+  text-decoration: none;
 }
 
 .dot-indicator {
@@ -434,4 +437,54 @@ footer p {
 
 .footer-section-icons-div img {
   width: 4vw;
+}
+
+@media (max-width: 640px) {
+  .navBar-elem {
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+  .main-header-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .fa-2xl {
+    font-size: 1em;
+  }
+  .social-icons-blank-div {
+    height: 6vw;
+  }
+  .about-section-div {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .about-section-div img {
+    width: 50vw;
+  }
+  .about-section-div p {
+    font-size: 2.7vw;
+    line-height: 3.9vw;
+  }
+  .work-section-slides-div p {
+    font-size: 2.3vw;
+    line-height: 3.5vw;
+  }
+  .dot {
+    height: 7px;
+    width: 7px;
+  }
+  .skill-section-card-div {
+    border: 5px solid rgb(5, 120, 120);
+  }
+  footer h2 {
+    font-size: 3vw;
+    line-height: 4.3vw;
+  }
+  footer p {
+    font-size: 2.3vw;
+    line-height: 3.3vw;
+  }
+  .footer-section-icons-div img {
+    width: 7vw;
+  }
 }/*# sourceMappingURL=style.css.map */
