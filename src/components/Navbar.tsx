@@ -81,8 +81,8 @@ export const LinkPreview = ({
   children,
   url,
   className,
-  width = 200,
-  height = 125,
+  width = 1920,
+  height = 1080,
   isStatic = false,
   imageSrc = "",
 }: LinkPreviewProps) => {
@@ -171,7 +171,7 @@ export const LinkPreview = ({
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
-                    className="rounded-lg"
+                    className="rounded-lg max-w-[20vmax]"
                     alt="preview image"
                   />
                 </a>
@@ -214,13 +214,13 @@ export const ProductItem = ({
 }) => {
   return (
     <a href={href} className="flex space-x-2">
-      {/* <img
+      <img
         src={src}
         width={140}
         height={70}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl"
-      /> */}
+      />
       <div>
         <h4 className="text-xl font-bold mb-1 text-black">{title}</h4>
         <p className="text-neutral-700 text-sm max-w-[10rem]">{description}</p>

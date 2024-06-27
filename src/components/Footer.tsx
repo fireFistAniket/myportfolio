@@ -12,10 +12,13 @@ const Footer = () => {
         Reach out to me today and let&apos;s discuss how I can help you achieve
         your goals
       </p>
-      <button className="inline-flex h-12 items-center justify-center rounded-md bg-[linear-gradient(92.94deg,_#041D1B_6.58%,_#0C2319_103.22%)] bg-[length:200%_100%] px-6 font-medium text-primary gradient-border border border-solid transition-colors gap-1 relative">
-        <span>See my works</span>
-        <span>
-          <IconArrowUpRight stroke={2} />
+      <button className="relative inline-flex h-12 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[linear-gradient(180deg,_rgba(54,_55,_73,_0.43)_0%,_rgba(54,_55,_73,_0.49)_100%)]" />
+        <span className="inline-flex h-full gap-2 w-full cursor-pointer items-center justify-center rounded-md bg-[linear-gradient(92.94deg,_#041D1B_6.58%,_#0C2319_103.22%)] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+          <span>Contact me now</span>
+          <span>
+            <IconArrowUpRight stroke={2} />
+          </span>
         </span>
       </button>
     </footer>
