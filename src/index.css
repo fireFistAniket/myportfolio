@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+}
+
+:root {
+  --background: #001414;
+  --secondary: #f7f9ac;
+  --primary: #ffffff;
+}
+
+.heading {
+  font-size: 2.5vmax;
+  font-weight: 700;
+}
+
+.gradient-border {
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(54, 55, 73, 0.43) 0%,
+    rgba(54, 55, 73, 0.49) 100%
+  );
+}
