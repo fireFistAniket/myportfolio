@@ -2,7 +2,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-grid-[#262626]/[0.05] flex flex-col items-center gap-[6vmin] py-[3vmax]">
+    <footer className="bg-grid-[#262626]/[0.15] flex flex-col items-center gap-[6vmin] py-[3vmax]">
       <h1 className="text-primary text-3xl md:text-5xl font-bold text-center max-w-5xl">
         Let&apos;s build something{" "}
         <span className="text-secondary">amazing</span> together. Connect with

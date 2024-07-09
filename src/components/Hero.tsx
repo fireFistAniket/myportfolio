@@ -58,7 +58,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
 
 export function Hero() {
   return (
-    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-[#262626]/[0.05] relative overflow-hidden">
+    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-[#262626]/[0.15] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
