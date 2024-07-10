@@ -1,5 +1,6 @@
 import { cn } from "../utils/cn";
 import React, { useEffect, useState } from "react";
+import { HeadingSlogan } from "./HeadingSlogan";
 
 export const InfiniteMovingCards = ({
   items,
@@ -71,7 +72,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -120,13 +121,22 @@ export const InfiniteMovingCards = ({
 
 export default function ClientReview() {
   return (
-    <div className='h-[40rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction='right'
-        speed='slow'
-      />
-    </div>
+    <main className='flex flex-col gap-[4vmin] my-[2vmax] mx-[3vmax]'>
+      <div className='text-4xl md:text-7xl font-bold text-center text-primary'>
+        <HeadingSlogan words='Reviews' />
+        <HeadingSlogan
+          words=' from satisfied clients'
+          className='text-secondary'
+        />
+      </div>
+      <div className='h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden'>
+        <InfiniteMovingCards
+          items={testimonials}
+          direction='right'
+          speed='slow'
+        />
+      </div>
+    </main>
   );
 }
 

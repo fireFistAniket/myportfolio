@@ -387,7 +387,7 @@ const Card = ({
 
 export default function ApprochCard() {
   return (
-    <div className='flex flex-col gap-[8vmin]'>
+    <div className='flex flex-col gap-[8vmin] py-[2vmax] my-[2vmax] '>
       <div className='text-4xl md:text-7xl font-bold text-center text-primary'>
         <HeadingSlogan words='My' />
         <HeadingSlogan words=' project approch' className='text-secondary' />
