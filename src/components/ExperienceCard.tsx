@@ -41,10 +41,10 @@ export function Button({
       {...otherProps}
     >
       <div
-        className='absolute inset-0'
+        className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
-        <MovingBorder duration={duration} rx='30%' ry='30%'>
+        <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
               "h-20 w-20 opacity-[0.8] bg-[radial-gradient(#CBACF9_40%,transparent_60%)]",
@@ -107,17 +107,17 @@ export const MovingBorder = ({
   return (
     <>
       <svg
-        xmlns='http://www.w3.org/2000/svg'
-        preserveAspectRatio='none'
-        className='absolute h-full w-full'
-        width='100%'
-        height='100%'
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        className="absolute h-full w-full"
+        width="100%"
+        height="100%"
         {...otherProps}
       >
         <rect
-          fill='none'
-          width='100%'
-          height='100%'
+          fill="none"
+          width="100%"
+          height="100%"
           rx={rx}
           ry={ry}
           ref={pathRef}
@@ -140,15 +140,18 @@ export const MovingBorder = ({
 
 export default function ExperienceCard() {
   return (
-    <main className='flex flex-col gap-[4vmin] my-[2vmax] mx-[3vmax]'>
-      <div className='text-4xl md:text-7xl font-bold text-center text-primary'>
-        <HeadingSlogan words='My' />
-        <HeadingSlogan words=' work experience' className='text-secondary' />
+    <main
+      className="flex flex-col gap-[4vmin] my-[2vmax] mx-[3vmax]"
+      id="experience"
+    >
+      <div className="text-4xl md:text-7xl font-bold text-center text-primary">
+        <HeadingSlogan words="My" />
+        <HeadingSlogan words=" work experience" className="text-secondary" />
       </div>
-      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         <Button
           duration={Math.floor(Math.random() * 10000) + 10000}
-          borderRadius='1.75rem'
+          borderRadius="1.75rem"
           style={{
             //   add these two
             //   you can generate the color from here https://cssgradient.io/
@@ -158,20 +161,20 @@ export default function ExperienceCard() {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className='flex border-neutral-200 items-center justify-center p-4'
+          className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src='/myportfolio/website-development.png'
-            alt='website development'
+            src="/myportfolio/website-development.png"
+            alt="website development"
             width={650}
             height={400}
-            className='w-[10vmax]'
+            className="w-[10vmax] "
           />
-          <div className='flex flex-col gap-[2.5vmin] px-4'>
-            <h1 className='text-[2vmax] capitalize font-bold'>
+          <div className="flex flex-col gap-[2.5vmin] px-4">
+            <h1 className="text-[2vmax] capitalize font-bold">
               website developer
             </h1>
-            <p className='text-neutral-500 text-[1.15vmax] text-center font-medium'>
+            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
               As a dedicated Website Developer specializing in the MERN stack, I
               bring a robust blend of technical expertise and creative
               problem-solving to every project.
@@ -180,7 +183,7 @@ export default function ExperienceCard() {
         </Button>
         <Button
           duration={Math.floor(Math.random() * 10000) + 10000}
-          borderRadius='1.75rem'
+          borderRadius="1.75rem"
           style={{
             //   add these two
             //   you can generate the color from here https://cssgradient.io/
@@ -190,20 +193,20 @@ export default function ExperienceCard() {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className='flex border-neutral-200 items-center justify-center p-4'
+          className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src='/myportfolio/webapps-development.png'
-            alt='webapps development'
+            src="/myportfolio/webapps-development.png"
+            alt="webapps development"
             width={650}
             height={400}
-            className='w-[10vmax]'
+            className="w-[10vmax]"
           />
-          <div className='flex flex-col gap-[2.5vmin] px-4'>
-            <h1 className='text-[2vmax] capitalize font-bold'>
+          <div className="flex flex-col gap-[2.5vmin] px-4">
+            <h1 className="text-[2vmax] capitalize font-bold">
               web apps developer
             </h1>
-            <p className='text-neutral-500 text-[1.15vmax] text-center font-medium'>
+            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
               As a dedicated Web Apps Developer specializing in the MERN stack,
               I am passionate about creating powerful and scalable web
               applications.
@@ -212,7 +215,7 @@ export default function ExperienceCard() {
         </Button>
         <Button
           duration={Math.floor(Math.random() * 10000) + 10000}
-          borderRadius='1.75rem'
+          borderRadius="1.75rem"
           style={{
             //   add these two
             //   you can generate the color from here https://cssgradient.io/
@@ -222,20 +225,20 @@ export default function ExperienceCard() {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className='flex border-neutral-200 items-center justify-center p-4'
+          className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src='/myportfolio/mobile-apps-development.png'
-            alt='mobile apps development'
+            src="/myportfolio/mobile-apps-development.png"
+            alt="mobile apps development"
             width={650}
             height={400}
-            className='w-[10vmax]'
+            className="w-[10vmax]"
           />
-          <div className='flex flex-col gap-[2.5vmin] px-4'>
-            <h1 className='text-[2vmax] capitalize font-bold'>
+          <div className="flex flex-col gap-[2.5vmin] px-4">
+            <h1 className="text-[2vmax] capitalize font-bold">
               mobile apps developer
             </h1>
-            <p className='text-neutral-500 text-[1.15vmax] text-center font-medium'>
+            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
               As a skilled Mobile Apps Developer with expertise in creating
               cross-platform applications, I am dedicated to delivering
               high-quality, user-centric mobile experiences. Leveraging the
@@ -247,7 +250,7 @@ export default function ExperienceCard() {
         </Button>
         <Button
           duration={Math.floor(Math.random() * 10000) + 10000}
-          borderRadius='1.75rem'
+          borderRadius="1.75rem"
           style={{
             //   add these two
             //   you can generate the color from here https://cssgradient.io/
@@ -257,20 +260,20 @@ export default function ExperienceCard() {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className='flex border-neutral-200 items-center justify-center p-4'
+          className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src='/myportfolio/desktop-apps-development.png'
-            alt='mobile apps development'
+            src="/myportfolio/desktop-apps-development.png"
+            alt="mobile apps development"
             width={650}
             height={400}
-            className='w-[10vmax]'
+            className="w-[10vmax]"
           />
-          <div className='flex flex-col gap-[2.5vmin] px-4'>
-            <h1 className='text-[2vmax] capitalize font-bold'>
+          <div className="flex flex-col gap-[2.5vmin] px-4">
+            <h1 className="text-[2vmax] capitalize font-bold">
               desktop apps developer
             </h1>
-            <p className='text-neutral-500 text-[1.15vmax] text-center font-medium'>
+            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
               As a proficient Desktop Apps Developer, I specialize in creating
               powerful, user-friendly applications for a variety of operating
               systems. Leveraging my expertise in technologies like Electron.js

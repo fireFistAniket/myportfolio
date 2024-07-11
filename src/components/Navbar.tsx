@@ -45,7 +45,7 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className='relative '>
+    <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
         className={`cursor-pointer ${
@@ -61,15 +61,15 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className='absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4'>
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId='active' // layoutId ensures smooth animation
-                className='bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] shadow-xl'
+                layoutId="active" // layoutId ensures smooth animation
+                className="bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className='w-max h-full p-4'
+                  className="w-max h-full p-4"
                 >
                   {children}
                 </motion.div>
@@ -121,8 +121,8 @@ export const LinkPreview = ({
   return (
     <>
       {isMounted ? (
-        <div className='hidden'>
-          <img src={src} width={width} height={height} alt='hidden image' />
+        <div className="hidden">
+          <img src={src} width={width} height={height} alt="hidden image" />
         </div>
       ) : null}
 
@@ -142,9 +142,9 @@ export const LinkPreview = ({
         </HoverCardPrimitive.Trigger>
 
         <HoverCardPrimitive.Content
-          className='[transform-origin:var(--radix-hover-card-content-transform-origin)]'
-          side='top'
-          align='center'
+          className="[transform-origin:var(--radix-hover-card-content-transform-origin)]"
+          side="top"
+          align="center"
           sideOffset={10}
         >
           <AnimatePresence>
@@ -162,22 +162,22 @@ export const LinkPreview = ({
                   },
                 }}
                 exit={{ opacity: 0, y: 20, scale: 0.6 }}
-                className='shadow-xl rounded-xl'
+                className="shadow-xl rounded-xl"
                 style={{
                   x: translateX,
                 }}
               >
                 <Link
                   to={url}
-                  className='block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800'
+                  className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
                 >
                   <img
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
-                    className='rounded-lg max-w-[20vmax]'
-                    alt='preview image'
+                    className="rounded-lg max-w-[20vmax]"
+                    alt="preview image"
                   />
                 </Link>
               </motion.div>
@@ -199,7 +199,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className='relative rounded-3xl gradient-border boder border-solid bg-[linear-gradient(103.4deg,_#041D1C_16.66%,_#0C2319_81.61%)] shadow-input flex justify-center space-x-4 px-8 py-6 '
+      className="relative rounded-3xl gradient-border boder border-solid bg-[linear-gradient(103.4deg,_#041D1C_16.66%,_#0C2319_81.61%)] shadow-input flex justify-center space-x-4 px-8 py-6 "
     >
       {children}
     </nav>
@@ -218,17 +218,17 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link to={href} className='flex space-x-2'>
+    <Link to={href} className="flex space-x-2">
       <img
         src={src}
         width={140}
         height={70}
         alt={title}
-        className='flex-shrink-0 rounded-md shadow-2xl'
+        className="flex-shrink-0 rounded-md shadow-2xl"
       />
       <div>
-        <h4 className='text-xl font-bold mb-1 text-black'>{title}</h4>
-        <p className='text-neutral-700 text-sm max-w-[10rem]'>{description}</p>
+        <h4 className="text-xl font-bold mb-1 text-black">{title}</h4>
+        <p className="text-neutral-700 text-sm max-w-[10rem]">{description}</p>
       </div>
     </Link>
   );
@@ -236,7 +236,7 @@ export const ProductItem = ({
 
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <Link {...rest} className='text-neutral-700 hover:text-black '>
+    <Link {...rest} className="text-neutral-700 hover:text-black ">
       {children}
     </Link>
   );
@@ -267,7 +267,7 @@ export function Navbar({ className }: { className?: string }) {
   });
 
   return (
-    <AnimatePresence mode='wait'>
+    <AnimatePresence mode="wait">
       <motion.div
         initial={{
           opacity: 1,
@@ -281,61 +281,60 @@ export function Navbar({ className }: { className?: string }) {
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50",
+          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-[100]",
           className
         )}
       >
         <Menu setActive={setActive}>
           <LinkPreview
-            url='#contact'
-            imageSrc='/myportfolio/footer-preview.png'
+            url="#contact"
+            imageSrc="/myportfolio/footer-preview.png"
             isStatic
           >
-            <MenuItem setActive={setActive} active={active} item='About' />
+            <MenuItem setActive={setActive} active={active} item="About" />
           </LinkPreview>
 
-          <MenuItem setActive={setActive} active={active} item='Projects'>
-            <div className='  text-sm grid grid-cols-2 gap-10 p-4'>
+          <MenuItem setActive={setActive} active={active} item="Projects">
+            <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
-                title='Algochurn'
-                href='https://algochurn.com'
-                src='https://assets.aceternity.com/demos/algochurn.webp'
-                description='Prepare for tech interviews like never before.'
+                title="Algochurn"
+                href="https://algochurn.com"
+                src="https://assets.aceternity.com/demos/algochurn.webp"
+                description="Prepare for tech interviews like never before."
               />
               <ProductItem
-                title='Tailwind Master Kit'
-                href='https://tailwindmasterkit.com'
-                src='https://assets.aceternity.com/demos/tailwindmasterkit.webp'
-                description='Production ready Tailwind css components for your next project'
+                title="Tailwind Master Kit"
+                href="https://tailwindmasterkit.com"
+                src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                description="Production ready Tailwind css components for your next project"
               />
               <ProductItem
-                title='Moonbeam'
-                href='https://gomoonbeam.com'
-                src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png'
-                description='Never write from scratch again. Go from idea to blog in minutes.'
+                title="Moonbeam"
+                href="https://gomoonbeam.com"
+                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+                description="Never write from scratch again. Go from idea to blog in minutes."
               />
               <ProductItem
-                title='Rogue'
-                href='https://userogue.com'
-                src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png'
-                description='Respond to government RFPs, RFIs and RFQs 10x faster using AI'
+                title="Rogue"
+                href="https://userogue.com"
+                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
               />
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item='Testimonials'>
-            <div className='flex flex-col space-y-4 text-sm'>
-              <HoveredLink href='/hobby'>Hobby</HoveredLink>
-              <HoveredLink href='/individual'>Individual</HoveredLink>
-              <HoveredLink href='/team'>Team</HoveredLink>
-              <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item='Contact'>
-            <div className='flex flex-col space-y-4 text-sm'>
-              <HoveredLink href='/hobby'>Hobby</HoveredLink>
-              <HoveredLink href='/individual'>Individual</HoveredLink>
-              <HoveredLink href='/team'>Team</HoveredLink>
-              <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
+          <LinkPreview
+            url="#experience"
+            imageSrc="/myportfolio/experience-preview.png"
+            isStatic
+          >
+            <MenuItem setActive={setActive} active={active} item="Experience" />
+          </LinkPreview>
+          <MenuItem setActive={setActive} active={active} item="Contact">
+            <div className="flex flex-col space-y-4 text-sm">
+              <HoveredLink href="/hobby">Hobby</HoveredLink>
+              <HoveredLink href="/individual">Individual</HoveredLink>
+              <HoveredLink href="/team">Team</HoveredLink>
+              <HoveredLink href="/enterprise">Enterprise</HoveredLink>
             </div>
           </MenuItem>
         </Menu>

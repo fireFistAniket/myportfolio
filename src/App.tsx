@@ -8,18 +8,39 @@ import { Navbar } from "./components/Navbar";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
 
-
 const ScrollToSection = () => {
-  const { hash } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      const element = document.getElementById(hash.substring(1));
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+
+        // Framer Motion bounce effect
+        const bounceEffect = async () => {
+          await new Promise((resolve) => setTimeout(resolve, 1000)); // Delay to sync with smooth scroll
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          await new Promise((resolve) => setTimeout(resolve, 100));
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        };
+
+        bounceEffect();
       }
     }
-  }, [hash]);
+
+  }, [location]);
 
   return null;
 };
@@ -27,15 +48,16 @@ const ScrollToSection = () => {
 function App() {
   return (
     <>
-      <Navbar  />
+      <Navbar />
 
-      <ScrollToSection  />
+      <ScrollToSection />
 
       <Hero />
       <Projects />
       <ClientReview />
       <ExperienceCard />
       <ApprochCard />
+
       <Footer />
     </>
   );
