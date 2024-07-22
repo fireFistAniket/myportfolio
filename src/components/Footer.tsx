@@ -3,8 +3,8 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandPinterest,
   IconBrandWhatsapp,
-  IconBrandX,
 } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Footer = () => {
       className="bg-grid-[#262626]/[0.15] flex flex-col items-center gap-[6vmin] py-[3vmax] my-[2vmax] mx-[3vmax]"
       id="contact"
     >
-      <h1 className="text-primary text-3xl md:text-5xl font-bold text-center max-w-5xl">
+      <h1 className="text-primary text-3xl md:text-5xl font-bold text-center max-w-5xl headingStyle">
         Let&apos;s build something{" "}
         <span className="text-secondary">amazing</span> together. Connect with
         me.
@@ -39,7 +39,9 @@ const Footer = () => {
         <p className="text-white text-lg">Copyright &copy;2024 Aniket Saha</p>
         <div className="flex items-center gap-2">
           <Link
-            to=""
+            to="https://www.instagram.com/aniketsaha_006/"
+            target="_blank"
+            referrerPolicy="no-referrer"
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}
@@ -51,13 +53,17 @@ const Footer = () => {
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}
-            to=""
+            to="https://in.pinterest.com/sahaaniket720/"
+            target="_blank"
+            referrerPolicy="no-referrer"
             className="rounded-2xl border p-2 border-gray-100 bg-clip-padding backdrop-filter backdrop-blur isolate"
           >
-            <IconBrandX stroke={2} className="text-white w-8 h-8" />
+            <IconBrandPinterest stroke={2} className="text-white w-8 h-8" />
           </Link>
           <Link
-            to=""
+            to="https://github.com/fireFistAniket"
+            target="_blank"
+            referrerPolicy="no-referrer"
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}
@@ -66,7 +72,9 @@ const Footer = () => {
             <IconBrandGithub stroke={2} className="text-white w-8 h-8" />
           </Link>
           <Link
-            to=""
+            to="https://wa.me/919007000328"
+            target="_blank"
+            referrerPolicy="no-referrer"
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}
@@ -75,7 +83,9 @@ const Footer = () => {
             <IconBrandWhatsapp stroke={2} className="text-white w-8 h-8" />
           </Link>
           <Link
-            to=""
+            to="https://www.linkedin.com/in/aniket-saha-536048210/"
+            target="_blank"
+            referrerPolicy="no-referrer"
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}

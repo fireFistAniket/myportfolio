@@ -39,7 +39,7 @@ export const HeadingSlogan = ({
   };
 
   return (
-    <div className={cn("font-bold inline-flex", className)}>
+    <div className={cn("font-bold inline-flex headingStyle ", className)}>
       <div className="mt-4">
         <div className=" mx-[2vmin]">{renderWords()}</div>
       </div>

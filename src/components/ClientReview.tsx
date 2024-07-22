@@ -121,7 +121,10 @@ export const InfiniteMovingCards = ({
 
 export default function ClientReview() {
   return (
-    <main className='flex flex-col gap-[4vmin] my-[2vmax] mx-[3vmax]'>
+    <main
+      className='flex flex-col gap-[4vmin] my-[2vmax] mx-[3vmax]'
+      id='reviews'
+    >
       <div className='text-4xl md:text-7xl font-bold text-center text-primary'>
         <HeadingSlogan words='Reviews' />
         <HeadingSlogan

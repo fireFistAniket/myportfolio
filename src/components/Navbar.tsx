@@ -329,6 +329,13 @@ export function Navbar({ className }: { className?: string }) {
           >
             <MenuItem setActive={setActive} active={active} item="Experience" />
           </LinkPreview>
+          <LinkPreview
+            url="#approach"
+            imageSrc="/myportfolio/approach-preview.png"
+            isStatic
+          >
+            <MenuItem setActive={setActive} active={active} item="Approach" />
+          </LinkPreview>
           <MenuItem setActive={setActive} active={active} item="Contact">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/hobby">Hobby</HoveredLink>

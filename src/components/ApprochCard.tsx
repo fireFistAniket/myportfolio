@@ -342,7 +342,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className='border border-neutral-200/30 group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 relative h-[30rem] rounded-lg shadow-md'
+      className='border border-neutral-200/30 group/canvas-card flex items-center justify-center max-w-[20vmax] w-full mx-auto p-4 relative h-[30vmax] rounded-lg shadow-md'
     >
       <Icon className='absolute h-6 w-6 -top-3 -left-3 text-white' />
       <Icon className='absolute h-6 w-6 -bottom-3 -left-3 text-white' />
@@ -373,7 +373,7 @@ const Card = ({
           <span className='inline-flex gap-2 cursor-pointer items-center justify-center rounded-md bg-[linear-gradient(92.94deg,_#041D1B_6.58%,_#0C2319_103.22%)] px-3 py-1 text-lg font-medium text-secondary backdrop-blur-3xl'>
             <span>{initialText}</span>
           </span>
-          <h2 className='text-secondary text-3xl font-bold group-hover/canvas-card:text-secondary'>
+          <h2 className='text-secondary text-3xl font-bold group-hover/canvas-card:text-secondary headingStyle'>
             {title}
           </h2>
           <p className='text-white text-xl font-bold group-hover/canvas-card:text-white text-center'>
@@ -387,7 +387,10 @@ const Card = ({
 
 export default function ApprochCard() {
   return (
-    <div className='flex flex-col gap-[8vmin] py-[2vmax] my-[2vmax] '>
+    <div
+      className='flex flex-col gap-[8vmin] py-[2vmax] my-[2vmax]'
+      id='approach'
+    >
       <div className='text-4xl md:text-7xl font-bold text-center text-primary'>
         <HeadingSlogan words='My' />
         <HeadingSlogan words=' project approch' className='text-secondary' />

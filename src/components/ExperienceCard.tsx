@@ -171,7 +171,7 @@ export default function ExperienceCard() {
             className="w-[10vmax] "
           />
           <div className="flex flex-col gap-[2.5vmin] px-4">
-            <h1 className="text-[2vmax] capitalize font-bold">
+            <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               website developer
             </h1>
             <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
@@ -203,7 +203,7 @@ export default function ExperienceCard() {
             className="w-[10vmax]"
           />
           <div className="flex flex-col gap-[2.5vmin] px-4">
-            <h1 className="text-[2vmax] capitalize font-bold">
+            <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               web apps developer
             </h1>
             <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
@@ -235,7 +235,7 @@ export default function ExperienceCard() {
             className="w-[10vmax]"
           />
           <div className="flex flex-col gap-[2.5vmin] px-4">
-            <h1 className="text-[2vmax] capitalize font-bold">
+            <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               mobile apps developer
             </h1>
             <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
@@ -270,7 +270,7 @@ export default function ExperienceCard() {
             className="w-[10vmax]"
           />
           <div className="flex flex-col gap-[2.5vmin] px-4">
-            <h1 className="text-[2vmax] capitalize font-bold">
+            <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               desktop apps developer
             </h1>
             <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
