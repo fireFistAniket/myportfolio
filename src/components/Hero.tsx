@@ -17,7 +17,7 @@ export const LampContainer = ({
         className
       )}
     >
-      <div className='relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 '>
+      <div className='relative flex w-full md:flex-1 scale-y-125 items-center justify-center isolate z-0 '>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -92,11 +92,11 @@ export function Hero() {
     >
       <div className='absolute top-0 left-0 w-full h-full bg-grid-[#262626]/[0.15]'></div>
       <LampContainer className=''>
-        <div className='p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-24 flex flex-col items-center gap-[2vmax] md:gap-[2.5vmin] bg-grid-[#262626]/[0.15] top-60 md:top-16'>
+        <div className='p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-24 flex flex-col items-center gap-[2vmax] md:gap-[2.5vmin] top-60 md:top-16'>
           <p className='uppercase text-[#E4ECFF] tracking-widest text-center'>
             welcome to my portfolio
           </p>
-          <h1 className='text-5xl md:text-7xl font-bold text-center text-primary'>
+          <h1 className='text-[4vmax] font-bold text-center text-primary'>
             <HeadingSlogan words='Hi, Myself' />
             <HeadingSlogan words='Aniket Saha' className='text-secondary' />
             <br />

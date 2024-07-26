@@ -342,7 +342,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className='border border-neutral-200/30 group/canvas-card flex items-center justify-center max-w-[20vmax] w-full mx-auto p-4 relative h-[30vmax] rounded-lg shadow-md'
+      className='border border-neutral-200/30 group/canvas-card flex items-center justify-center max-w-[50vmax] sm:max-w-[20vmax] w-full mx-auto p-4 relative h-[65vmax] sm:h-[30vmax] rounded-lg shadow-md'
     >
       <Icon className='absolute h-6 w-6 -top-3 -left-3 text-white' />
       <Icon className='absolute h-6 w-6 -bottom-3 -left-3 text-white' />
@@ -373,7 +373,7 @@ const Card = ({
           <span className='inline-flex gap-2 cursor-pointer items-center justify-center rounded-md bg-[linear-gradient(92.94deg,_#041D1B_6.58%,_#0C2319_103.22%)] px-3 py-1 text-lg font-medium text-secondary backdrop-blur-3xl'>
             <span>{initialText}</span>
           </span>
-          <h2 className='text-secondary text-3xl font-bold group-hover/canvas-card:text-secondary headingStyle'>
+          <h2 className='text-secondary text-center text-3xl font-bold group-hover/canvas-card:text-secondary headingStyle'>
             {title}
           </h2>
           <p className='text-white text-xl font-bold group-hover/canvas-card:text-white text-center'>
@@ -395,7 +395,7 @@ export default function ApprochCard() {
         <HeadingSlogan words='My' />
         <HeadingSlogan words=' project approch' className='text-secondary' />
       </div>
-      <div className='flex flex-wrap justify-evenly'>
+      <div className='flex flex-col md:flex-row justify-evenly gap-12 md:gap-0'>
         <Card
           title='Planning & Statergy'
           description="We'll collaborate to map out your website's goals, target audience, and key functionalities. Well discuss things like site structure, navigation, and content requirements."

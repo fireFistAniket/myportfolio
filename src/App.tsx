@@ -39,7 +39,6 @@ const ScrollToSection = () => {
         bounceEffect();
       }
     }
-
   }, [location]);
 
   return null;
@@ -57,7 +56,6 @@ function App() {
       <ClientReview />
       <ExperienceCard />
       <ApprochCard />
-
       <Footer />
     </>
   );

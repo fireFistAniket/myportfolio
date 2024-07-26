@@ -164,7 +164,7 @@ export default function ExperienceCard() {
           className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src="/myportfolio/website-development.png"
+            src="/website-development.png"
             alt="website development"
             width={650}
             height={400}
@@ -174,7 +174,7 @@ export default function ExperienceCard() {
             <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               website developer
             </h1>
-            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
+            <p className="text-neutral-500 text-[2.2vmax] sm:text-[1.15vmax] line-clamp-4  text-center font-medium">
               As a dedicated Website Developer specializing in the MERN stack, I
               bring a robust blend of technical expertise and creative
               problem-solving to every project.
@@ -196,7 +196,7 @@ export default function ExperienceCard() {
           className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src="/myportfolio/webapps-development.png"
+            src="/webapps-development.png"
             alt="webapps development"
             width={650}
             height={400}
@@ -206,7 +206,7 @@ export default function ExperienceCard() {
             <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               web apps developer
             </h1>
-            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
+            <p className="text-neutral-500 text-[2.2vmax] sm:text-[1.15vmax] line-clamp-4 text-center font-medium">
               As a dedicated Web Apps Developer specializing in the MERN stack,
               I am passionate about creating powerful and scalable web
               applications.
@@ -228,7 +228,7 @@ export default function ExperienceCard() {
           className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src="/myportfolio/mobile-apps-development.png"
+            src="/mobile-apps-development.png"
             alt="mobile apps development"
             width={650}
             height={400}
@@ -238,7 +238,7 @@ export default function ExperienceCard() {
             <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               mobile apps developer
             </h1>
-            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
+            <p className="text-neutral-500 text-[2.2vmax] sm:text-[1.15vmax] line-clamp-4 text-center font-medium">
               As a skilled Mobile Apps Developer with expertise in creating
               cross-platform applications, I am dedicated to delivering
               high-quality, user-centric mobile experiences. Leveraging the
@@ -263,7 +263,7 @@ export default function ExperienceCard() {
           className="flex border-neutral-200 items-center justify-center p-4"
         >
           <img
-            src="/myportfolio/desktop-apps-development.png"
+            src="/desktop-apps-development.png"
             alt="mobile apps development"
             width={650}
             height={400}
@@ -273,7 +273,7 @@ export default function ExperienceCard() {
             <h1 className="text-[2vmax] capitalize font-bold headingStyle">
               desktop apps developer
             </h1>
-            <p className="text-neutral-500 text-[1.15vmax] text-center font-medium">
+            <p className="text-neutral-500 text-[2.2vmax] sm:text-[1.15vmax] line-clamp-4 text-center font-medium">
               As a proficient Desktop Apps Developer, I specialize in creating
               powerful, user-friendly applications for a variety of operating
               systems. Leveraging my expertise in technologies like Electron.js

@@ -288,7 +288,7 @@ export function Navbar({ className }: { className?: string }) {
         <Menu setActive={setActive}>
           <LinkPreview
             url="#contact"
-            imageSrc="/myportfolio/footer-preview.png"
+            imageSrc="/footer-preview.png"
             isStatic
           >
             <MenuItem setActive={setActive} active={active} item="About" />
@@ -324,14 +324,14 @@ export function Navbar({ className }: { className?: string }) {
           </MenuItem>
           <LinkPreview
             url="#experience"
-            imageSrc="/myportfolio/experience-preview.png"
+            imageSrc="/experience-preview.png"
             isStatic
           >
             <MenuItem setActive={setActive} active={active} item="Experience" />
           </LinkPreview>
           <LinkPreview
             url="#approach"
-            imageSrc="/myportfolio/approach-preview.png"
+            imageSrc="/approach-preview.png"
             isStatic
           >
             <MenuItem setActive={setActive} active={active} item="Approach" />
