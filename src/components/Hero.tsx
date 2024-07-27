@@ -2,6 +2,7 @@ import { cn } from "../utils/cn";
 import { IconArrowUpRight } from "@tabler/icons-react";
 import { HeadingSlogan } from "./HeadingSlogan";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const LampContainer = ({
   children,
@@ -110,7 +111,7 @@ export function Hero() {
             I am full stack MERN developer with 2+ years of experience. Client
             satisfactory experience is my main focus.
           </p>
-          <button className='relative inline-flex h-12 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'>
+          <Link to='#project' className='relative inline-flex h-12 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'>
             <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[linear-gradient(180deg,_rgba(54,_55,_73,_0.43)_0%,_rgba(54,_55,_73,_0.49)_100%)]' />
             <span className='inline-flex h-full gap-2 w-full cursor-pointer items-center justify-center rounded-md bg-[linear-gradient(92.94deg,_#041D1B_6.58%,_#0C2319_103.22%)] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl'>
               <span>See my works</span>
@@ -118,7 +119,7 @@ export function Hero() {
                 <IconArrowUpRight stroke={2} />
               </span>
             </span>
-          </button>
+          </Link>
         </div>
       </LampContainer>
     </div>

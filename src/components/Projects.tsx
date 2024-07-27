@@ -40,7 +40,7 @@ export const PinContainer = ({
   return (
     <Link
       className={cn(
-        "relative group/pin z-50 flex-1 cursor-pointer",
+        "relative group/pin flex-1 z-50 cursor-pointer",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -452,41 +452,48 @@ export default function Projects() {
   }
 
   return (
-    <main id="project">
+    <main id="project" className="my-12">
       <div className="text-4xl md:text-7xl font-bold text-center text-primary">
         <HeadingSlogan words="Some of my " />
         <HeadingSlogan words=" recent projects" className="text-secondary" />
       </div>
-      <div className="min-h-[40rem] flex flex-wrap justify-center mx-[3vmax]">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.length > 0 &&
           projects.map((project, index) => (
-            <PinContainer title="Visit Site" key={index} href={project.uri}>
-              <div className="flex basis-full flex-col p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[50vmax] md:w-[25vmax] gap-2">
-                <div className="bg-[url('/project-cover.png')] bg-cover sm:p-8 pb-0 flex items-end mb-4">
-                  <img
-                    src={project.cover}
-                    alt="project_cover"
-                    className="w-full"
-                  />
-                </div>
-                <h3 className="max-w-xs headingStyle mt-4 !pb-2 !m-0 font-bold text-xl sm:text-2xl text-secondary">
-                  {project.title}
-                </h3>
-                <div className="text-sm sm:text-lg !m-0 !p-0 font-normal">
-                  <span className="text-slate-300 line-clamp-4">{project.description}</span>
-                </div>
-                <div className="flex items-center justify-between mt-4">
-                  <div className="flex flex-row items-center justify-center">
-                    <AnimatedTooltip items={techIcons(project.tech)} />
+            <div
+              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] hover:z-[1000]"
+              key={index}
+            >
+              <PinContainer title="Visit Site" href={project.uri}>
+                <div className="flex flex-col p-2 tracking-tight text-slate-100/50 w-[40vmax] md:w-[45vmax] lg:w-[35vmax] xl:w-[20vmax] gap-2">
+                  <div className="bg-[url('/project-cover.png')] bg-cover sm:p-8 pb-0 flex items-end mb-4 h-[15vmax] md:h-[18vmax] xl:h-[12vmax] overflow-hidden">
+                    <img
+                      src={project.cover}
+                      alt="project_cover"
+                      className="w-full"
+                    />
                   </div>
-                  <div className="">
-                    <p className="text-secondary text-[4vmin] sm:text-[2.5vmin]">
-                      Check Live --&gt;
-                    </p>
+                  <h3 className="max-w-xs headingStyle mt-4 !pb-2 !m-0 font-bold text-xl sm:text-2xl text-secondary">
+                    {project.title}
+                  </h3>
+                  <div className="text-sm sm:text-lg !m-0 !p-0 font-normal">
+                    <span className="text-slate-300 line-clamp-4">
+                      {project.description}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between mt-4">
+                    <div className="flex flex-row items-center justify-center">
+                      <AnimatedTooltip items={techIcons(project.tech)} />
+                    </div>
+                    <div className="">
+                      <p className="text-secondary text-[4vmin] sm:text-[2.5vmin]">
+                        Check Live --&gt;
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </PinContainer>
+              </PinContainer>
+            </div>
           ))}
       </div>
     </main>
