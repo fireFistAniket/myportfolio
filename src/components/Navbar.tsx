@@ -287,8 +287,8 @@ export function Navbar({ className }: { className?: string }) {
       >
         <Menu setActive={setActive}>
           <LinkPreview
-            url="#contact"
-            imageSrc="/footer-preview.png"
+            url="#about"
+            imageSrc="/about-preview.png"
             isStatic
           >
             <MenuItem setActive={setActive} active={active} item="About" />

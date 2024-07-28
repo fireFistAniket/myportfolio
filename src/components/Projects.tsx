@@ -461,11 +461,11 @@ export default function Projects() {
         {projects.length > 0 &&
           projects.map((project, index) => (
             <div
-              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] hover:z-[1000]"
+              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center xl:w-[25vmax] sm:w-96 w-[80vw] hover:z-[1000] m-4"
               key={index}
             >
               <PinContainer title="Visit Site" href={project.uri}>
-                <div className="flex flex-col p-2 tracking-tight text-slate-100/50 w-[40vmax] md:w-[45vmax] lg:w-[35vmax] xl:w-[20vmax] gap-2">
+                <div className="flex flex-col p-2 tracking-tight text-slate-100/50 w-[40vmax] md:w-[45vmax] lg:w-[35vmax] xl:w-[25vmax] gap-2">
                   <div className="bg-[url('/project-cover.png')] bg-cover sm:p-8 pb-0 flex items-end mb-4 h-[15vmax] md:h-[18vmax] xl:h-[12vmax] overflow-hidden">
                     <img
                       src={project.cover}

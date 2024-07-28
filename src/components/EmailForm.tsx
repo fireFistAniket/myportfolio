@@ -135,7 +135,6 @@ export function EmailForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
     try {
       const docRef = await addDoc(collection(db, "MyRequestData"), {
         name: fullName,

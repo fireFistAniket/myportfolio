@@ -7,6 +7,7 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
+import AboutGrid from "./components/AboutGrid";
 
 const ScrollToSection = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ function App() {
       <ScrollToSection />
 
       <Hero />
+      <AboutGrid />
       <Projects />
       <ClientReview />
       <ExperienceCard />
