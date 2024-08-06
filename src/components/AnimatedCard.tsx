@@ -16,7 +16,7 @@ interface ModalContextType {
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
-export const ModalProvider = ({ children }: { children: ReactNode }) => {
+const ModalProvider = ({ children }: { children: ReactNode }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,7 +26,7 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useModal = () => {
+const useModal = () => {
   const context = useContext(ModalContext);
   if (!context) {
     throw new Error("useModal must be used within a ModalProvider");
@@ -134,34 +134,6 @@ export const ModalBody = ({
         </motion.div>
       )}
     </AnimatePresence>
-  );
-};
-
-export const ModalContent = ({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
-      {children}
-    </div>
-  );
-};
-
-export const ModalFooter = ({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn("flex justify-end p-4 bg-neutral-900", className)}>
-      {children}
-    </div>
   );
 };
 
