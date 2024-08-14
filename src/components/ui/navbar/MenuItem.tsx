@@ -26,7 +26,7 @@ const MenuItem = ({
         transition={{ duration: 0.3 }}
         className={`cursor-pointer ${
           active === item ? "text-white" : "text-[#C1C2D3]"
-        } hover:text-primary text-base hover:opacity-[0.9]`}
+        } hover:text-primary text-[1.5vmax] hover:opacity-[0.9]`}
       >
         {item}
       </motion.p>

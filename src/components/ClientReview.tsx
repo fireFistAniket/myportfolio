@@ -28,31 +28,26 @@ export default function ClientReview() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
+      "We are extremely pleased with the business website created for us by Aniket Saha. As a MERN stack developer, Aniket showed exceptional skill and creativity, delivering a site that perfectly matches our vision. His professionalism and attention to detail ensured a smooth process from start to finish. We highly recommend his services for anyone in need of high-quality web development.",
+    name: "Code N Creativity",
     title: "A Tale of Two Cities",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
+      "Aniket Saha did an outstanding job creating our website. As a MERN stack developer, he brought our vision for Fipezo, an online platform for freelancers, to life with exceptional skill and creativity. His professionalism and attention to detail were evident throughout the project. We highly recommend Aniket for any web development needs.",
+    name: "Fipezo",
     title: "Hamlet",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
+    quote:
+      "Aniket Saha was an invaluable asset to our team at WebApps Software Service. As a Frontend developer, his expertise and creativity significantly enhanced our projects. Aniket's professionalism, attention to detail, and ability to deliver high-quality work on time made him a standout contributor. We highly recommend Aniket for any frontend development needs.",
+    name: "WebApps Software Service",
     title: "A Dream Within a Dream",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
+      "Aniket Saha has been a fantastic addition to Rabin's Photography as our web and app developer. His expertise and creativity have greatly enhanced our digital presence. Aniket's dedication, attention to detail, and ability to deliver high-quality work have been invaluable to our team. We highly recommend him for any web and app development projects.",
+    name: "Rabin's Photography",
     title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
   },
 ];
