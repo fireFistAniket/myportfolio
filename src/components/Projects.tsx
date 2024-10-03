@@ -194,6 +194,23 @@ export default function Projects() {
             ),
           });
           break;
+        case "netlify":
+          returnable.push({
+            id: index,
+            name: "Netlify",
+            icon: (
+              <img
+                src="/netlify-icon.svg"
+                alt="netlify"
+                className="max-w-8 sm:max-w-12 max-h-8 sm:max-h-12 border border-neutral-800 rounded-full"
+                style={{
+                  background:
+                    "linear-gradient(103.4deg, #022626 16.66%, #000B0B 81.61%)",
+                }}
+              />
+            ),
+          });
+          break;
         default:
           break;
       }
