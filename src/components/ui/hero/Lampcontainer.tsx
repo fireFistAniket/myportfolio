@@ -11,11 +11,11 @@ const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen pt-24 flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[var(--background)] to-transparent w-full rounded-md z-0",
+        "relative flex min-h-screen pt-6 md:pt-24 flex-col items-center justify-start md:justify-center overflow-hidden bg-gradient-to-b from-[var(--background)] to-transparent w-full rounded-md z-0",
         className
       )}
     >
-      <div className="relative flex w-full md:flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+      <div className="relative flex w-full h-48 md:h-auto md:flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -75,7 +75,7 @@ const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[9.5rem] sm:-translate-y-[12.5rem] bg-[var(--background)] "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-20 sm:-translate-y-32 md:-translate-y-80 flex-col items-center px-5">
         {children}
       </div>
     </div>

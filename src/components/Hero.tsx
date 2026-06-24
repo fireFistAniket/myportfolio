@@ -11,23 +11,22 @@ export function Hero() {
     >
       <div className="absolute top-0 left-0 w-full h-full bg-grid-[#262626]/[0.15]"></div>
       <LampContainer className="">
-        <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-24 flex flex-col items-center gap-[2vmax] md:gap-[2.5vmin] top-60 md:top-16">
-          <p className="uppercase text-[#E4ECFF] tracking-widest text-center">
+        <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-0 md:pt-24 flex flex-col items-center gap-[2vmax] md:gap-[2.5vmin] top-0 md:top-16">
+          <p className="uppercase text-[#E4ECFF] tracking-widest text-center text-xs sm:text-sm">
             welcome to my portfolio
           </p>
-          <h1 className="text-[4vmax] font-bold text-center text-primary">
+          <h1 className="text-[7vw] sm:text-[5vw] md:text-[4vmax] font-bold text-center text-primary">
             <HeadingSlogan words="Hi, Myself" />
             <HeadingSlogan words="Aniket Saha" className="text-secondary" />
             <br />
             <HeadingSlogan words="I am a" />
             <HeadingSlogan
-              words="MERN stack Developer"
+              words="Full-Stack Tech Lead"
               className="text-secondary"
             />
           </h1>
-          <p className="mt-4 font-normal text-[1.5vmax] text-neutral-300 max-w-xl text-center mx-auto">
-            I am full stack MERN developer with 2+ years of experience. Client
-            satisfactory experience is my main focus.
+          <p className="mt-4 font-normal text-sm sm:text-base md:text-[1.5vmax] text-neutral-300 max-w-xl text-center mx-auto px-4 md:px-0 lg:leading-[2vmax]">
+            Senior Full-Stack Engineer & Technical Lead with 3+ years of experience building scalable MERN stack architectures and leading engineering teams.
           </p>
           <Link
             to="#project"

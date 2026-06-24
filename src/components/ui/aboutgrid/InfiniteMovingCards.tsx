@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-              <span className="relative z-20 text-[1vmax] whitespace-nowrap leading-[1.6] text-gray-900 font-semibold text-center">
+              <span className="relative z-20 lg:text-[1vmax] whitespace-nowrap leading-[1.6] text-gray-900 font-semibold text-center">
                 {item.title}
               </span>
             </blockquote>

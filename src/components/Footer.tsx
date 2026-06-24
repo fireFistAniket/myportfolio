@@ -1,10 +1,8 @@
 import {
   IconArrowUpRight,
   IconBrandGithub,
-  IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandPinterest,
-  IconBrandWhatsapp,
+  IconMail,
 } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody, ModalTrigger } from "./AnimatedCard";
@@ -45,32 +43,19 @@ const Footer = () => {
         </ModalBody>
       </Modal>
       <div className='flex flex-col sm:flex-row items-center justify-between self-stretch gap-4 md:gap-0'>
-        <p className='text-white text-lg'>Copyright &copy;2024 Aniket Saha</p>
+        <p className='text-white text-lg'>Copyright &copy;{new Date().getFullYear()} Aniket Saha</p>
         <div className='flex items-center gap-2'>
           <Link
-            to='https://www.instagram.com/aniketsaha_006/'
-            target='_blank'
-            referrerPolicy='no-referrer'
+            to='mailto:sahaaniket720@gmail.com'
             style={{
               background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
             }}
             className='rounded-2xl border p-2 border-gray-100 bg-clip-padding backdrop-filter backdrop-blur isolate'
           >
-            <IconBrandInstagram stroke={2} className='text-white w-8 h-8' />
+            <IconMail stroke={2} className='text-white w-8 h-8' />
           </Link>
           <Link
-            style={{
-              background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
-            }}
-            to='https://in.pinterest.com/sahaaniket720/'
-            target='_blank'
-            referrerPolicy='no-referrer'
-            className='rounded-2xl border p-2 border-gray-100 bg-clip-padding backdrop-filter backdrop-blur isolate'
-          >
-            <IconBrandPinterest stroke={2} className='text-white w-8 h-8' />
-          </Link>
-          <Link
-            to='https://github.com/fireFistAniket'
+            to='https://github.com/rolex1xx8'
             target='_blank'
             referrerPolicy='no-referrer'
             style={{
@@ -79,17 +64,6 @@ const Footer = () => {
             className='rounded-2xl border p-2 border-gray-100 bg-clip-padding backdrop-filter backdrop-blur isolate'
           >
             <IconBrandGithub stroke={2} className='text-white w-8 h-8' />
-          </Link>
-          <Link
-            to='https://wa.me/919007000328'
-            target='_blank'
-            referrerPolicy='no-referrer'
-            style={{
-              background: `radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)`,
-            }}
-            className='rounded-2xl border p-2 border-gray-100 bg-clip-padding backdrop-filter backdrop-blur isolate'
-          >
-            <IconBrandWhatsapp stroke={2} className='text-white w-8 h-8' />
           </Link>
           <Link
             to='https://www.linkedin.com/in/aniket-saha-536048210/'
